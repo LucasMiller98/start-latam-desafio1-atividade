@@ -1,0 +1,102 @@
+/* Irá tirar a margin e o padding padrões do navegador */
+* {margin: 0; padding: 0;} 
+/* 
+    Corpo 
+*/
+:root {
+    --font-family: 'Crimson Text', Helvetica, serif;
+}
+body {
+    font-family: var(--font-family);
+    overflow-y: hidden;
+}
+
+/* 
+    Cabeçalho
+*/
+header {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 16px;
+    font-size: 4vh;
+    text-shadow: 12px 8px 3px #606060;
+}
+/* 
+    Conteúdo principal
+*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 3vh;
+}
+section {
+    margin-top: 12px;
+}
+section h3 {
+    margin-bottom: 15px;
+}
+#grupo {
+    margin-bottom: 15px;
+}
+#hitoria-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #606060;
+    width: 700px;
+}
+::selection {
+    background-color: #182918;
+    color: #f1f1f1;
+}
+button {
+    padding: 7px;
+    border-radius: 5px;
+    margin: 7px 7px;
+    outline: none;
+    border: 1px solid #606060;
+    background-color: #f1f1f1;
+    color: #363636;
+    font-family: var(--font-family);
+    font-size: 17px;
+}
+button:hover {
+    background-color: #606060;
+    color: #f1f1f1;
+}
+#hitoria-title {
+    margin-top: 15px;
+}
+#historia {
+    border-bottom: 1px solid #606060;
+}
+ul li {
+    list-style: circle;
+}
+
+/* 
+    Rodapé
+*/
+#direitos {
+    position: relative;
+    top: 90px;
+}
+footer p::after {
+    content: ".";
+}
+footer {
+    background-color: #606060;
+    color: #f1f1f1;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px auto;
+    max-width: 100%;
+    min-width: 50%;
+    font-size: 3vh;
+    padding-bottom: 16.4%;
+}
