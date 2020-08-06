@@ -8,7 +8,7 @@
 }
 body {
     font-family: var(--font-family);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 /* 
@@ -64,6 +64,20 @@ button {
     font-size: 17px;
 }
 button:hover {
+    background-color: #606060;
+    color: #f1f1f1;
+}
+#op {
+    margin-top: 7px;
+    padding: 3px;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    background-color: #f1f1f1;
+    color: #606060;
+    outline: none;
+    font-size: 17px;
+}
+#op:hover {
     background-color: #606060;
     color: #f1f1f1;
 }
